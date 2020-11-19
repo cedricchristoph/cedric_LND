@@ -1,0 +1,60 @@
+
+<!DOCTYPE html encoding = "UTF-8"?>
+<html>
+<head>
+<style></style>
+<title>Cedric Christoph Form</title>
+<h3>Cedric Christoph</h3>
+</head>
+
+
+<body>
+
+<form action="procesar.php" method="post">
+
+	<fieldset>
+	
+		<legend>Datos del propietario</legend>
+		
+			<label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" name="nombre" /><br><br>
+			<label for="sexo">Sexo:</label>
+			<label><input type="radio" name="sexo" value="hombre" checked="checked" /> Hombre </label>
+			<label><input type="radio" name="sexo" value="mujer"/> Mujer</label>
+			
+	</fieldset>
+	<br></br>
+	<fieldset>
+	
+		<legend>Datos del vehículo</legend>
+		
+			<label for="marca">Marca/modelo:</label>
+			<input type="text" id="carModel" name="carModel" /><br><br>
+			<label for="matricula">Matrícula:</label>
+			<input type="text" id="matricula" name="matricula" /><br><br>
+
+			<label for="caracteristicas">Características:</label> 
+			<select name = "caracteristicas" size = "5" multiple = "multiple">  
+				<option value = "utilitario" checked="checked">Utilitario</option> 
+				<option value = "todo_terreno">Todo Terreno</option> 
+				<option value = "alta_gama">Alta gama</option> 
+<			</select>	<br><br>
+
+
+			<label>Otros datos:</label>			
+			<label><input type="checkbox" name="otros" value="servofrenos" checked="checked" /> Servofrenos </label>
+			<label><input type="checkbox" name="otros" value="elevalunas" checked="checked" /> Elevalunas</label>
+			<label><input type="checkbox" name="otros" value="remolque"/> Remolque</label>
+			
+	</fieldset>
+	
+	<input type="submit" name="enviar" value="enviar" />
+	
+	
+	
+	
+</form>
+
+</body>
+	
+</html>

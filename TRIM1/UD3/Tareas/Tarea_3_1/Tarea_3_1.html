@@ -1,10 +1,9 @@
-
-<!DOCTYPE html encoding = "UTF-8"?>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
-<style></style>
 <title>Cedric Christoph Form</title>
-<h3>Cedric Christoph</h3>
+<object><h3>Cedric Christoph</h3></object>
 </head>
 
 
@@ -17,28 +16,28 @@
 		<legend>Datos del propietario</legend>
 		
 			<label for="nombre">Nombre:</label>
-			<input type="text" id="nombre" name="nombre" /><br><br>
-			<label for="sexo">Sexo:</label>
+			<input type="text" id="nombre" name="nombre" /><br></br>
+			<label>Sexo:</label>
 			<label><input type="radio" name="sexo" value="hombre" checked="checked" /> Hombre </label>
 			<label><input type="radio" name="sexo" value="mujer"/> Mujer</label>
 			
 	</fieldset>
-	<br></br>
+	
 	<fieldset>
 	
 		<legend>Datos del vehículo</legend>
 		
-			<label for="marca">Marca/modelo:</label>
-			<input type="text" id="carModel" name="carModel" /><br><br>
+			<label>Marca/modelo:</label>
+			<input type="text" id="carModel" name="carModel" /><br></br>
 			<label for="matricula">Matrícula:</label>
-			<input type="text" id="matricula" name="matricula" /><br><br>
+			<input type="text" id="matricula" name="matricula" /><br></br>
 
-			<label for="caracteristicas">Características:</label> 
-			<select name = "caracteristicas" size = "5" multiple = "multiple">  
-				<option value = "utilitario" checked="checked">Utilitario</option> 
+			<label>Características:</label> 
+			<select name = "caracteristicas" size = "5" multiple = "multiple"> 
+				<option value = "utilitario" selected="selected">Utilitario</option> 
 				<option value = "todo_terreno">Todo Terreno</option> 
-				<option value = "alta_gama">Alta gama</option> 
-<			</select>	<br><br>
+				<option value = "alta_gama" selected="selected">Alta gama</option> 
+<			</select><br></br>
 
 
 			<label>Otros datos:</label>			
@@ -48,7 +47,7 @@
 			
 	</fieldset>
 	
-	<input type="submit" name="enviar" value="enviar" />
+	<p><input type="submit" name="enviar" value="enviar" /></p>
 	
 	
 	

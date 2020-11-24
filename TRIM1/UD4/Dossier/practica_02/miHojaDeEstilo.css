@@ -1,0 +1,28 @@
+.letraVerde{
+	color: green;	
+}
+
+.inputFieldBlue{
+	background-color: #add8e6;
+	color: blue;
+		
+}
+
+.inputFieldRed{
+	background-color: red;
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+		
+}
+
+.bordeDiscontinuoVerde{
+	 border-style: dashed;
+	 border-color: green;
+	
+}
+
+legend{
+	color: purple;
+	
+}

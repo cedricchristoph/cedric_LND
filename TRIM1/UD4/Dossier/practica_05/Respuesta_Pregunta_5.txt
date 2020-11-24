@@ -1,0 +1,6 @@
+RESPUESTA A PREGUNTA 5 DE LA PRÁCTICA:
+
+	Debido a que "Don Quijote", "Rocinante" y "voces" se encuentran
+	dentro de un "span" en el interior de un "p", nunca adoptan el color
+	azul definido para los "p". Adoptarán el color verde asignado al principio
+	por el selector universal. Es por esto que se ven verdes y además tachados.

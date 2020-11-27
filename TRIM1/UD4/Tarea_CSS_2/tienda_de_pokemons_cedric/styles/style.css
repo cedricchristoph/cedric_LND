@@ -1,0 +1,46 @@
+
+          
+.float_left{
+   
+    float: left;
+}
+.float_right{
+   
+    float: right;
+}
+
+fieldset{
+    
+    width: 400px;
+    border-color: orange;
+    border-style: solid;
+    margin: 10px;
+}
+
+legend{
+    
+    padding: 15px;
+    font-size: 1.5em;
+    background-color: orange;
+    color: white;    
+}
+
+table img{
+    height: 75px;
+    width: 75px;
+    
+}
+
+fieldset table{
+    
+    border-width: 0px;
+    
+}
+
+.importante{
+    
+    background-color: #BBF53A;
+    font-family: Courier;
+    font-weight: bold;
+    
+}

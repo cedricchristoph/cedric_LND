@@ -1,0 +1,13 @@
+Analiza el código y responde. ¿Qué hacen las siguientes reglas CSS?
+
+1) table p {text-align: justify;}
+    Coloca todos los "p" dentro de "table" de tal manera que la primera palabra esté a la derecha a la última a la izquierda de cada línea.
+    
+2) table p a {word-spacing: 10px;}
+    Todos los comandos "a" dentro de un "p" y este a su vez dentro de un "table" crean un espacio de 10px entre cada de sus palabras.
+    
+3) table, p, a {background-image: gato.gif}
+    Todos los "table", "p" y "a" tendrán como fondo "gato.gif"
+    
+4) p * a {border-top 2px green}
+    Todos los "a" dentro de cualquier elemento en un p tendrán un borde superior de 2px de color verde.

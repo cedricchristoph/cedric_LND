@@ -1,0 +1,29 @@
+table {
+    border-style: solid;
+    border-color: blue;
+    border-width: 1px;
+    display: inline-block;
+    width: 300px;
+}
+
+.mihead {
+    background-color: mediumpurple;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.mibody {
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.mifooter {
+    background-color: mediumpurple;
+    color: white;
+    font-size: 10px;
+    text-align: right;   
+}
+

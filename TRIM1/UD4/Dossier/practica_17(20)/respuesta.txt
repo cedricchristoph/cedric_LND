@@ -1,0 +1,11 @@
+¿Por qué aparecen una debajo de la otra?
+----------------------------------------------------------------
+| Los divs en su forma nativa (es decir, sin extra opciones de | 
+| estilo) son elementos de bloque. Por esta razón se colocarán |
+| siempre uno debajo del otro.                                 |
+----------------------------------------------------------------
+
+¿Qué tipo de posicionamiento utilizan?
+----------------------------------------------------------
+| Los divs como estándar tienen posicionamiento "static" | 
+----------------------------------------------------------

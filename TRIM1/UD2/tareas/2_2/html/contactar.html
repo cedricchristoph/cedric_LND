@@ -1,0 +1,82 @@
+<html>
+
+	<head>
+	
+		<style type="text/css">
+			li a{
+				
+				background-color: #fcbe03;
+				border: solid 1px black;
+			}
+			
+			a:hover{
+				background-color: #edc95c;
+			}
+			
+			a:visited{
+				color: black;
+			}
+			
+			a:link{
+				color:black;
+			}
+			
+			.centrado{
+				text-align: center;
+				padding: 10px;
+			}
+			
+			.formulario{
+				width: 200px;
+				height: 400px;
+				margin: auto;
+				width: 50%;
+			}
+			
+			.pad{
+				padding: 15px;
+			}
+			
+		</style>
+		
+	</head>
+
+
+	<body>
+			<h2 class="centrado">
+				Contacta conmigo
+			</h2>
+	
+		<div class="formulario">
+			<form action="mailto:cedric@icecraft.es" method="post" enctype="text/plain">
+				<fieldset>
+					<legend><strong>Introduzca sus datos</strong></legend>
+					<div class="pad">
+						<label>Tu nombre:</label>
+						<input type="text" name="nombre"/><br/>
+						&nbsp;<br/>
+						<label>Tu sexo:</label><br/>
+						<input type="radio" name="nombre"/><label> Mujer</label><br/>
+						<input type="radio" name="nombre"/><label> Hombre</label><br/>
+						&nbsp;<br/>
+						<label>Estás estudiando:</label>
+						<select>
+							<option>Primero de Administración de Sistemas</option>
+							<option>Segundo de Administración de Sistemas</option>
+							<option selected="selected">Primero de Desarrollo Web</option>
+							<option>Segundo de Desarrollo Web</option>
+						</select><br/>
+						&nbsp;<br/>
+						<label>El texto de tu mensaje:</label><br/>
+						<textarea cols="60" rows="5"></textarea><br/>
+						&nbsp;<br/>
+						<input type="submit" value="Contacta conmigo"/>
+					</div>
+				</fieldset>
+				
+			</form>
+		
+		</div>
+	</body>
+
+</html>

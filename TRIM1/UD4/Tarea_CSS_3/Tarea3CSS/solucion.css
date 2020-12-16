@@ -1,0 +1,100 @@
+
+
+/** 	CEDRIC CHRISTOPH - DAM
+		TAREA CSS 3
+		16/12/2020				*/
+
+
+p {
+	font-style: helevetica;
+	font-size: 14px;
+	color: #333333;
+	
+}
+
+
+
+#basset{
+	
+	text-align:left;
+	background-color: white;
+	
+	border: solid red 3px;
+	display: inline-block;
+	
+	width: 450px;
+	height: auto;
+	margin: 2px;
+
+	position:absolute;
+	bottom: 50px;
+	left: 50px;
+	
+}
+
+#rottweiler{
+	
+	background-color: white;
+	
+	border: solid red 3px;
+	display: inline-block;
+	
+	width: 450px;
+	height: auto;
+	margin: 2px;
+	
+	position:absolute;
+	bottom: 100px;
+	left: 550px;
+	
+}
+
+#yorkshire{
+	
+	align-self: center;	
+	border: solid red 3px;
+	
+	background-color: white;
+	display: inline-block;
+	
+	width: 450px;
+	height: auto;
+	margin: 2px;
+	
+	position:absolute;
+	bottom: 50px;
+	left: 1050px;
+
+
+}
+
+#empresa{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 50px;
+	color: white;
+	text-align: center;
+	background-color: #D62443;
+	width: 100%;
+}
+
+div img:first-child{
+	
+	width: 150px;
+	height: 150px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	float: left;
+	
+}
+
+div:not(#empresa) h2{
+	
+	text-align: right;
+	background-color: #D7D7D7;
+	color: green;
+	text-indent: 10px;
+	
+}

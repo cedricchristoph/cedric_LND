@@ -61,8 +61,82 @@ nav li:hover{
 	
 }
 
-#contenido{
+#principal, aside{
 	display: inline-block;
-	vertical-align: top;
+    vertical-align: top;
+    padding: 1px;
 }
+
+section #principal{
+    width: 70%;
+}
+
+aside{
+    width: 29%;
+}
+
+#contenido article{
+    margin: 2%;
+    background-color: #F2F7FC;
+    border: solid 1px #5599BB;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px #C7C7C7;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+section header{
+    width: 100%;
+    padding: 5px;
+    background: none;
+    color: #5599BB;
+    font-size: 18px;
+    text-align: center;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: right;
+}
+
+section #principal article footer{
+    width: 100%;
+    padding 3px;
+    color: white;
+    text-align: right;
+    background-color: #5599BB;
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+
+article section{
+    text-align: left;
+    width: 100%;
+    background-color: #F2F7FC;
+    padding-left: 2px;
+}
+
+aside header{
+    width: 100%;
+    padding: 5px;
+    background: none;
+    color: #999999;
+    font-size: 14px;
+    text-align: center;
+}
+
+aside footer{
+    width: 100%;
+    padding 3px;
+    color: white;
+    text-align: right;
+    border: solid 1px #999999;
+    background-color: #999999;
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+
+
 

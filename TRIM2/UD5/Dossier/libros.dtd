@@ -1,0 +1,5 @@
+< !ELEMENT libros (libro+) >
+< !ELEMENT libro (titulo,autor,editorial) >
+< !ELEMENT titulo (#PCDATA) >
+< !ELEMENT autor (#PCDATA) >
+< !ELEMENT editorial (#PCDATA) >

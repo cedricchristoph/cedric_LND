@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE libros SYSTEM "libros.dtd" >
+<libros>
+	<libro>
+		<autor>Gabriel García Márquez</autor>
+		<titulo>Cronicas de una muerte anunciada</titulo>
+		<editorial>Triant Lo Banche</editorial>
+	</libro>
+</libros>

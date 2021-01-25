@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<libreria>
+	<libro categoria="novela">
+		<autor>Gabriel García Márquez</autor>
+		<titulo>Cronicas de una muerte anunciada</titulo>
+		<editorial>Triant Lo Banche</editorial>
+	</libro>
+    <libro categoria="cocina">
+		<autor>Cocinero</autor>
+		<titulo>Libro de cocina</titulo>
+		<editorial>Editorial</editorial>
+	</libro>
+    <libro categoria="programación">
+		<autor>Experto</autor>
+		<titulo>Como aprender Java</titulo>
+		<editorial>Editorial</editorial>
+	</libro>
+    <libro categoria="programación">
+		<autor>Experto</autor>
+		<titulo>HTML, CSS y XML</titulo>
+		<editorial>Editorial</editorial>
+	</libro>
+</libreria>

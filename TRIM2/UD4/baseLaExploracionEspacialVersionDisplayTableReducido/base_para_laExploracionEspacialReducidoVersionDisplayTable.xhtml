@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//ES" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+	 
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>La exploración espacial</title>
+		<style type="text/css" >
+
+		/*
+			el ancho de la parte con bordes es 1024px
+			el gris que se muestra en esa misma parte de fondo es: #E6E6E6
+			el borde es del tipo ridge
+
+			Los verdes que se muestran son los estandar
+			el color de la sombra del titular es gris
+
+			Agregar la etiqueta author correspondiente ( es la única modificación html el resto css )
+		*/
+			<meta name="author" content="Cedric Christoph"/>
+            
+            .titulo{
+                text-align: center;
+                color: green;
+                
+            }
+            
+            p{
+                font-family: "Times New Roman";
+                font-size: 20px;
+            }
+            
+            .principal{
+                width: 1024px;
+                height: auto;
+                margin: auto;
+                background-color: #E6E6E6;
+                border: 8px ridge green;
+                display: table;
+            }
+            
+            img{
+                margin-left: auto;
+                margin-right: 0%;
+                float: right;
+                
+            }
+            
+            
+            .tabla{
+                display: inline-table;
+                width: 60%;
+            }
+            
+            .fila{
+                display: table-row;
+                padding: 5px;
+            }
+            
+            .col{
+                display: table-cell;
+                padding: 5px;
+            }
+                      
+		</style>
+
+	</head>
+	 
+	<body >
+
+		<h1 class="titulo">La exploración espacial</h1>
+		
+	
+		<div class="principal" > <!-- contiene 3 textos y foto -->
+
+			<!-- recordar que si no vamos a tener varias filas no necesitamos un div con display row -->
+
+			<div class="tresTextos" > <!-- contiene 3 textos -->
+				<div class="fila"> <!-- contiene 2 textos -->
+					
+					<div class="col">
+                        <p>Las personas que pilotan naves espaciales, o son pasajeros en ellas, se llaman astronautas (en Rusia: <em>cosmonautas</em>; en China: <em>taikonautas</em>). Técnicamente se considera astronauta a todo aquel que emprenda un vuelo sub-orbital (sin entrar en órbita) u orbital a como mínimo 100 km de altitud (considerado el límite externo de la atmósfera).</p>
+                    </div>
+					
+                    <div class="col">
+                        <p>En Francia, <strong>Georges Méliès</strong>, uno de los pioneros del cine, tomaba la novela de Verne para crear <em>"Le voyage dans la Lune"</em> (1902), una de las primeras películas de ciencia ficción en la que describía un increíble viaje a la Luna. En obras como <em>"The War of the Worlds"</em> (1898) y <em>"The First Men in The Moon"</em> (1901), <strong>Herbert George Wells</strong> también se concibieron ideas de exploración del espacio y de contacto con civilizaciones extraterrestres.</p>
+                    </div>
+
+				</div> <!--fin dos textos-->
+                <div class="fila">
+                    <div class="col">
+                        <p >La <strong>exploración espacial</strong> designa los esfuerzos del hombre en estudiar el espacio y sus astros desde el punto de vista científico y de su explotación económica.</p>
+                    </div>
+                </div>
+			</div> <!-- fin 3 textos -->
+
+
+			<img width="350px" height="540" src="astronauta.jpg" alt="astronauta"/>
+
+		</div> <!-- fin 3 textos y foto -->
+	</body>
+</html>
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+        -> Para añadir un atributo debemos darle un nombre y luego darle un valor. Es decir, añadi a cada figura un atributo "tipo".
+        -> Algunas etiquetas tienen #PCDATA dentro de la etiqueta. Cerré esas etquetas y coloqué el #PCDATA donde es debido.
+        -> He cerrado todas las etiquetas mal cerradas como por ejemplo las de los lados, las caras y las aristas.
+
+-->
+<figuras> 
+    
+   <figura tipo="plana">
+      <nombre>cuadrado</nombre>
+      <lados>4</lados>
+   </figura>
+    
+   <figura tipo="plana">
+      <nombre>triángulo</nombre>
+      <lados>3</lados>
+   </figura>
+    
+   <figura tipo="tridimensional">
+      <nombre>cubo</nombre>
+      <aristas>12</aristas>
+      <caras>6</caras>
+   </figura>
+    
+</figuras>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<equipos>
+
+    <equipo>
+        <nombre>FC Bayern München</nombre>
+        <ciudad>München</ciudad>
+        <entrenador>Hansi Flick</entrenador>
+        
+        <jugador posicion="portero">
+            <nombre>Manuel Neuer</nombre>    
+            <nacionalidad>Alemania</nacionalidad>
+        </jugador>
+        
+        <jugador posicion="defensa">
+            <nombre>David Alaba</nombre>
+            <nacionalidad>Austria</nacionalidad>
+        </jugador>
+    </equipo>
+    
+     <equipo>
+        <nombre>Real Madrid</nombre>
+        <ciudad>Madrid</ciudad>
+        <entrenador>Zinédine Zidane</entrenador>
+        
+        <jugador posicion="defensa">
+            <nombre>Sergio Ramos</nombre>    
+            <nacionalidad>España</nacionalidad>
+        </jugador>
+         
+         <jugador posicion="portero">
+            <nombre>Andrij Lunin</nombre>
+            <nacionalidad>Ucrania</nacionalidad>
+        </jugador>
+    </equipo>
+
+
+</equipos>

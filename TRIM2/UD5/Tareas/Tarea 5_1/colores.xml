@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="estilo-colores.css"?>
+
+<mezclas>
+
+    <mezcla resultado="naranja">rojo y amarillo</mezcla>
+    <mezcla resultado="gris">negro y blanco</mezcla>
+    <mezcla resultado="verde claro">amarillo, azul y blanco</mezcla>
+    
+</mezclas>

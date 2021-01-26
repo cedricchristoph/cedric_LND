@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+        -> No se pueden repetir nombres de atributo en una misma etiqueta.
+           Por eso creo "letra" como etiqueta dentro de cada numero.
+        -> La etiqueta para cada numero debe tener un nombre como "numero".
+        -> Añado el número como un atributo a la etiqueta.
+        -> Las etiquetas están mal cerradas.
+
+-->
+<numeros>
+    
+    <numero num="1">
+        <letra>u</letra>
+        <letra>n</letra>
+        <letra>o</letra>
+    </numero>
+    
+    <numero num="2">
+        <letra>d</letra>
+        <letra>o</letra>
+        <letra>s</letra>
+    </numero>
+    
+    <numero num="6">
+        <letra>s</letra>
+        <letra>e</letra>
+        <letra>i</letra>
+        <letra>s</letra>
+    </numero>
+    
+</numeros>

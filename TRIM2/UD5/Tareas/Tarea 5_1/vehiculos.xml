@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--    -> Falntante ? para cerrar declaración xml
+        -> Version no lleva tilde
+        -> "encoding" no "encondin " -->
+
+<!-- Documento XML con errores de sintaxis. --> <!-- ! innecesario para cerrar
+        
+        -> FALTA UNA ETIQUETA PRINCIPAL EN LA QUE SE DEBEN SITUAR TODAS LAS DEMÁS
+        -> Cree "tipos" como etiqueta principal
+        -> Cerré todas las etiquetas que no lo estaban (TODAS)
+
+-->
+<tipos>
+    
+    <terrestres>
+        <vehiculo>bicicleta</vehiculo>a
+        <vehiculo>coche</vehiculo>
+        <vehiculo>tractor</vehiculo>
+    </terrestres>
+    
+    <acuaticos>
+        <vehiculo>canoa</vehiculo>
+    </acuaticos>
+    
+    <aereos>
+        <vehiculo>avioneta</vehiculo>
+        <vehiculo>helicóptero</vehiculo>
+    </aereos>
+    
+</tipos>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF8"?>
+
+<!--
+        -> En la declaracion del XML en "VERSION='1.0' estaba una coma "VERSION='1,0'. He corregido eso.
+        -> Ninguna de las etiquetas forma parte de una etiqueta principal. He añadido la etiqueta "triangulos" dentro de la cual están todos los triangulos.
+        -> Todas las etiquetas "triangulo" están abiertas. He añadido debidamente los cierres necesarios.
+
+-->
+<triangulos>
+    <triangulo base="7" altura="5"></triangulo>
+    <triangulo base="2" altura="6"></triangulo>
+    <triangulo base="3" altura="3"></triangulo>
+</triangulos>

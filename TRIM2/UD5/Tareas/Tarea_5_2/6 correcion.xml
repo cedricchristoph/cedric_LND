@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<!--
+        ERRORES Y CORRECIONES
+        
+        -> Ausencia de "encoding" en la declaración xml.
+
+        -> La etiqueta principal "libros" debe siempre escribirse igual y no cambiar a "Libros" en mayúscula.
+
+        -> Mal cerrada la etiqueta <libro></libro]
+            -> <libro></libro>
+
+        -> Los valores de atributos deben situarse entre "".
+        -> Nombres de atributos no deben repetirse.
+
+        -> La etiqueta autor no esta cerrada adecuadamente.
+            -> Añadido /> para cerrarla bien.
+
+        -> El signo < o > no puede aparecer dentro de un #PCDATA.
+-->
+<libros> 
+    <libro id="quijote"> 
+        <titulo>El Quijote</titulo> 
+        <autor nombre="cervantes"/> 
+        <descripcion>Es el mejor libro de cervantes.</descripcion> 
+    </libro>
+</libros>

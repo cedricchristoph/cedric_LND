@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE pedidos SYSTEM "pedidos.dtd">
+
+<pedidos>
+      <cliente idCliente="cli01"> 
+            <nombre>Luz</nombre>
+            <apellidos>Pérez</apellidos> 
+      </cliente>
+
+      <cliente idCliente="cli02"> 
+            <nombre>Miranda</nombre>
+            <apellidos>Gabriel</apellidos> 
+      </cliente>
+    
+      <articulo idArticulo="art01"> 
+            <nombre>papas</nombre>
+            <descripcion>saco de papas</descripcion> 
+      </articulo>
+    
+      <articulo idArticulo="art02"> 
+            <nombre>boniatos</nombre>
+            <descripcion>saco de batatas</descripcion> 
+      </articulo>
+    
+      <pedido idPedido="ped01" refCliente="cli01">
+            <articuloPedido precio="1001" refArticulo="art01"></articuloPedido> 
+            <metodoPago>
+                  <tarjeta titular="cli01"> 
+                        <numero>123456789</numero>
+                        <fechaCaducidad>01-01-2018</fechaCaducidad>
+                        <banco></banco> 
+                  </tarjeta>
+            </metodoPago> 
+            <direccion>
+                  <provincia></provincia> 
+                  <poblacion></poblacion> 
+                  <calle></calle> 
+                  <numero></numero>
+            </direccion> 
+      </pedido>
+    
+      <pedido idPedido="ped02" refCliente="cli02">
+            <articuloPedido precio="1002" refArticulo="art02"></articuloPedido> 
+            <metodoPago>
+                  <tarjeta titular="cli02"> 
+                        <numero></numero>
+                        <fechaCaducidad></fechaCaducidad>
+                        <banco></banco> 
+                  </tarjeta>
+            </metodoPago> 
+            <direccion>
+                  <provincia></provincia> 
+                  <poblacion></poblacion> 
+                  <calle></calle> 
+                  <numero></numero>
+            </direccion> 
+      </pedido>
+    
+      <pedido idPedido="ped03" refCliente="cli02">
+            <articuloPedido precio="1003" refArticulo="art02"></articuloPedido> 
+            <metodoPago>
+                  <tarjeta titular="cli02"> 
+                        <numero></numero>
+                        <fechaCaducidad></fechaCaducidad>
+                        <banco></banco> 
+                  </tarjeta>
+            </metodoPago> 
+            <direccion>
+                  <provincia></provincia>
+                  <poblacion></poblacion> 
+                  <calle></calle> 
+                  <numero></numero>
+            </direccion> 
+      </pedido>
+</pedidos>

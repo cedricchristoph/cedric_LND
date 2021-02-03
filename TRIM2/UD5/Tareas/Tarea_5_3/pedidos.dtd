@@ -1,0 +1,38 @@
+<!ELEMENT pedidos (cliente+,articulo+,pedido+)>
+<!ELEMENT cliente (nombre,apellidos)>
+<!ATTLIST cliente idCliente ID #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+
+
+<!ELEMENT articulo (nombre,descripcion?)>
+<!ATTLIST articulo idArticulo ID #REQUIRED>
+<!ELEMENT descripcion (#PCDATA)>
+
+
+<!ELEMENT pedido (articuloPedido,metodoPago,direccion)>
+<!ATTLIST pedido
+                idPedido ID #REQUIRED
+                refCliente IDREF #REQUIRED>
+
+<!ELEMENT articuloPedido EMPTY>
+<!ATTLIST articuloPedido precio CDATA "1">
+<!ATTLIST articuloPedido refArticulo IDREF #REQUIRED>
+
+                
+<!ELEMENT metodoPago (tarjeta | transferencia)>
+
+<!ELEMENT tarjeta (numero,fechaCaducidad,banco)>
+<!ATTLIST tarjeta titular IDREF #REQUIRED>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT fechaCaducidad (#PCDATA)>
+<!ELEMENT banco (#PCDATA)>
+
+<!ELEMENT transferencia (banco, numeroCuenta)>
+<!ELEMENT numeroCuenta (#PCDATA)>
+
+<!ELEMENT direccion (provincia,poblacion,calle,numero)>
+<!ELEMENT provincia (#PCDATA)>
+<!ELEMENT poblacion (#PCDATA)>
+<!ELEMENT calle (#PCDATA)>
+

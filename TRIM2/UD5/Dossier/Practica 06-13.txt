@@ -1,0 +1,199 @@
+PRACTICAS 06-13 DOSSIER | CEDRIC CHRISTOPH
+
+
+    PRACTICA 06: Indica qué documentos xml son válidos y cuáles no.
+    =================================================================
+    
+    Dado este DTD:
+    <!ELEMENT Alumno (DNI, Nombre)>
+    <!ELEMENT DNI (#PCDATA)>
+    <!ELEMENT Nombre (#PCDATA)>
+    
+    Documento 1:
+        Este documento es válido. Contiene "DNI" y "Nombre" en el orden correcto y con #PCDATA válido.
+        
+    Documento 2:
+        Este documento es válido. Contiene "DNI" y "Nombre" en el orden correcto y con #PCDATA válido.
+        
+    Documento 3:
+        Este documento no es válido. Se repite la etiqueta "Nombre" que va en contra de las reglas establecidas por el DTD.
+        
+    Documento 4:
+        Este documento es válido. Contiene "DNI" y "Nombre" en el orden correcto y con #PCDATA válido.
+        
+    =================================================================
+    
+    
+    PRACTICA 07: Indica qué documentos xml son válidos y cuáles no.
+    =================================================================
+    
+    Dado este DTD:
+    <!ELEMENT Alumno (DNI | Nombre)>
+    <!ELEMENT DNI (#PCDATA)>
+    <!ELEMENT Nombre (#PCDATA)>
+    
+    Documento 1:
+        Este documento es válido. "|" indica que puede estar uno de los dos, o los dos. Efectivamente este documento cumple con esta condición ya que encontramos los dos elementos.
+        
+    Documento 2:
+        Este documento es válido. "|" indica que puede estar uno de los dos, o los dos. Efectivamente este documento cumple con esta condición ya que encontramos los dos elementos.
+    
+    Documento 3:
+        Este documento es válido. "|" indica que puede estar uno de los dos, o los dos. Efectivamente este documento cumple con esta condición ya que está el nombre sólo.
+        
+    Documento 4:
+        Este documento es válido. "|" indica que puede estar uno de los dos, o los dos. Efectivamente este documento cumple con esta condición ya que encontramos los dos elementos.
+        
+    =================================================================
+    
+    
+    PRACTICA 08: Indica qué documentos xml son válidos y cuáles no.
+    =================================================================
+    
+    Dado este DTD:
+    <!ELEMENT Alumno (Nombre, Hermano*)>
+    <!ELEMENT Nombre (#PCDATA)>
+    <!ELEMENT Hermano (#PCDATA)>
+    
+    Documento 1:
+        Este documento es válido. Debe aparecer el nombre obligatoriamente y puede o no aparecer una o varias etiquetas de "hermano".
+    
+    Documento 2:
+        Este documento no es válido. La etiqueta "nombre" debe aparecer solamente una vez.
+        
+    Documento 3:
+        Este documento es válido. Contiene la etiqueta obligatoria "nombre" y no contiene ninguna etiqueta "hermano" que por el DTD está permitido (*).
+    
+    Documento 4:
+        Este documento es válido. Contiene la etiqueta obligatoria "nombre" y contiene varias etiquetas "hermano" que por el DTD está permitido (*).
+    
+    =================================================================
+    
+    
+    PRACTICA 09: Indica qué documentos xml son válidos y cuáles no.
+    =================================================================
+    
+    Dado este DTD:
+    <!ELEMENT Alumno (DNI*, Nombre+)>
+    <!ELEMENT DNI (#PCDATA)>
+    <!ELEMENT Nombre (#PCDATA)>
+    
+    Documento 1:
+        Este documento es válido. Contiene la etiqueta "nombre" que debe aparecer mínimo una vez. No contiene ninguna etiqueta "DNI" y tampoco hace falta.
+    
+    Documento 2:
+        Este documento es válido. Contiene la etiqueta "nombre" que debe aparecer mínimo una vez. Además contiene una etiqueta "DNI" que es perfectamente válido.
+        
+    Documento 3:
+        Este documento no es válido. A pesar de que puede contener 0 o muchos "DNI", debe al menos contener una etiqueta "nombre" que en este caso no lo cumple.
+        
+    Documento 4:
+        Este documento es válido. "+" indica que "nombre" debe aparecer mínimo una vez y puede aparecer más veces. "*" Indica que "DNI" puede aparecer varias veces o no aparecer ni una vez.
+        
+    =================================================================
+    
+    
+    PRACTICA 10: Indica qué documentos xml son válidos y cuáles no.
+    =================================================================
+    
+    Dado este DTD:
+    <!ELEMENT Alumno (DNI?, Nombre+)>
+    <!ELEMENT DNI (#PCDATA)>
+    <!ELEMENT Nombre (#PCDATA)>
+    
+    Documento 1:
+        Este documento es válido. "?" indica que DNI puede no aparecer o aparecer una sola vez. "+" Indica que "nombre" debe aparecer una vez como mínimo, como es el caso.
+        
+    Documento 2:
+        Este documento es válido. Aparece "DNI" una vez y "nombre" también aparece una vez. Ambos cumplen con sus respectivas reglas "?" y "+".
+    
+    Documento 3:
+        Este documento no es válido. "DNI" debe aparecer como máximo 1 vez. "Nombre" debe aparecer mínimo una vez. Este documento infringe ambas normas dadas por el DTD.
+        
+    Documento 4:
+        Este documento no es válido. A pesar de que "DNI" cumple con su condición "?", "Nombre" debe aparecer una vez como mínimo.
+        
+    =================================================================
+    
+    
+    PRACTICA 11: Indica qué documentos xml son válidos y cuáles no.
+    =================================================================
+    
+    Dado este DTD:
+    <!ELEMENT Alumno (#PCDATA | Nombre?)>
+    <!ELEMENT Nombre (#PCDATA)>
+    
+    Documento 1:
+        Este documento es válido. Dentro de la etiqueta "Alumno" puede aparecer o no tanto "Nombre" como #PCDATA. Ya que aparece la etiqueta "Nombre" y cumple su norma "?", este documento es válido.
+        
+    Documento 2:
+        Este documento es válido. Dentro de la etiqueta "Alumno" puede aparecer o no tanto "Nombre" como #PCDATA. Ya que aparece la etiqueta "Nombre" y cumple su norma "?" y a su vez aparece #PCDATA, este documento es válido.
+        
+    Documento 3:
+        Este documento es válido. "|" permite que aparezca #PCDATA, "Nombre" o ambas cosas. Aparece #PCDATA y por lo tanto el documento es válido.
+        
+    Documento 4:
+        Este documento no es válido. "|" obliga a que tiene que aparecer uno de los dos elementos si o si.
+        
+    =================================================================
+    
+    
+    PRACTICA 12: Indica qué documentos xml son válidos y cuáles no.
+    =================================================================
+    
+    Dado este DTD:
+    <!ELEMENT Alumnos (DNI | Nombre)*>
+    <!ELEMENT DNI (#PCDATA)>
+    <!ELEMENT Nombre (#PCDATA)>
+    
+    Documento 1:
+        Este documento es válido. Primero tenemos a "|" que nos indica que puede ser uno de los dos elementos u ambos. La * (que afecta a todos los elementos también) posibilita de que cada elemento puede aparecer una vez, muchas veces o nunca. Como aparece la etiqueta "nombre", el documento es válido.
+    
+    Documento 2:
+        Este documento no es válido. Claramente está indicado que la etiqueta "Alumnos" debe contener otras etiquetas y no puede contener #PCDATA.
+    
+    Documento 3:
+        Este documento es válido. Primero tenemos a "|" que nos indica que puede ser uno de los dos elementos u ambos. La * (que afecta a todos los elementos también) posibilita de que cada elemento puede aparecer una vez, muchas veces o nunca. Como aparece la etiqueta "dni", el documento es válido.
+        
+    Documento 4:
+        Este documento es válido. Aunque "|" nos indique que debe existir al menos uno de las dos etiquetas "dni" o "nombre", la * que afecta también a ambas etiquetas nos indica que estos elementos pueden no aparecer, aparecer una vez o muchas veces. Como no hay ninguna etiqueta, el documento es válido.
+        
+    Documento 5:
+        Este documento es válido. "|" posibilita que aparezcan ambas etiquetas al mismo tiempo. La * a su vez permite que aparezcan las etiquetas 0 veces, 1 vez o infinitas veces.
+        
+    Documento 6:
+        Este documento es válido. "|" no obliga a que los elementos aparezan en un determinado orden. La * como en el anterior caso nos permite tener varias etiquetas.
+        
+    =================================================================
+    
+    
+    PRACTICA 13: Modificando el DTD de la práctica anterior. Indica qué documentos xml son válidos y cuáles no.
+    =================================================================
+    
+    Dado este DTD:
+    <!ELEMENT Alumnos (DNI | Nombre)+>
+    <!ELEMENT DNI (#PCDATA)>
+    <!ELEMENT Nombre (#PCDATA)>
+    
+    Documento 1:
+        Este documento no es válido. Aunque "|" nos indique que puede aparecer sólo una de las dos etiquetas, "+" obliga a que existan ambas etiquetas mínimo una vez.
+
+    Documento 2:
+        Este documento no es válido. El documento no respeta ni "|" ni "+" haciendo que no aparezca ninguna de las etiquetas "DNI" "nombre". Menos aún permitido por el DTD está el #PCDATA dentro de la etiqueta principal.
+        
+    Documento 3:
+        Este documento no es válido. Aunque "|" nos indique que puede aparecer sólo una de las dos etiquetas, "+" obliga a que existan ambas etiquetas mínimo una vez.
+        
+    Documento 4:
+        Este documento no es válido. El documento no respeta ni "|" ni "+" haciendo que no aparezca ninguna de las etiquetas "DNI" "nombre".
+        
+    Documento 5:
+        Este documento es válido. "|" permite que aparezcan ambas etiquetas. Además "+" obliga a que existan ambas etiquetas mínimo una vez y permite que aparezcan más veces.
+    
+    Documento 6:
+        Este documento es válido. "|" permite que aparezcan ambas etiquetas. Además "+" obliga a que existan ambas etiquetas mínimo una vez y permite que aparezcan más veces.
+    
+        
+    
+        
+        

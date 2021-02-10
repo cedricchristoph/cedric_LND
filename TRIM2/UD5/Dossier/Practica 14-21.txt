@@ -1,0 +1,267 @@
+PRACTICAS 14-21 DOSSIER | CEDRIC CHRISTOPH
+
+
+    PRACTICA 14: ¿Es válido el documento dado el siguiente DTD?
+    =================================================================
+    
+    DTD:
+    <!ELEMENT XXX (AAA?, BBB+)>
+    <!ELEMENT AAA (CCC?, DDD*)>
+    <!ELEMENT BBB (CCC, DDD)>
+    <!ELEMENT CCC (#PCDATA)>
+    <!ELEMENT DDD (#PCDATA)>
+    
+    ########################################################
+    Documento 1:
+    <XXX>
+        <AAA>
+            <CCC/>
+            <DDD/>
+        </AAA>
+        <BBB>
+            <CCC/>
+            <DDD/>
+        </BBB>
+    </XXX>
+    
+    - La primera regla del DTD se respeta
+    - La segunda regla del DTD se respeta
+    - La tercera regla del DTD se respeta
+    - La cuarta y quinta regla del DTD se respetan
+    > CONCLUSIÓN: El documento es válido
+    ########################################################
+    
+    ########################################################
+     Documento 2:
+    <XXX>
+       <AAA/>
+       <BBB>
+           <CCC/>
+           <DDD/>
+       </BBB>
+    </XXX>
+    </XXX>
+    
+    - El XML en si está mal escrito ya que tiene la etiqueta XXX cerrada dos veces.
+    - La primera regla del DTD se respeta
+    - La segunda regla del DTD se respeta
+    - La tercera regla del DTD se respeta
+    - La cuarta y quinta regla del DTD se respetan 
+    - CONCLUSIÓN: El documento es válido
+    ########################################################
+    
+    ########################################################
+     Documento 3:
+    <XXX>
+        <AAA/>
+        <AAA/>
+        <BBB>
+            <CCC/>
+            <DDD/>
+        </BBB>
+    </XXX>
+    
+    - La primera regla del DTD NO se respeta (AAA debe aparecer 0 o 1 vez, no más)
+    - La segunda regla del DTD se respeta
+    - La tercera regla del DTD se respeta
+    - La cuarta y quinta regla del DTD se respetan 
+    - CONCLUSIÓN: El documento NO es válido
+    #########################################################
+    
+    =================================================================
+    
+    PRACTICA 15: ¿Es válido el documento dado el siguiente DTD?
+    =================================================================
+  
+    DTD:
+    <!ELEMENT XXX (AAA+, BBB+)>
+    <!ELEMENT AAA (BBB | CCC)>
+    <!ELEMENT BBB (#PCDATA | CCC)*>
+    <!ELEMENT CCC (#PCDATA)>
+    
+    ########################################################
+    Documento 1:
+    <XXX>
+        <AAA>
+            <CCC>Exactamente un elemento.</CCC>
+        </AAA>
+        <AAA>
+            <BBB>
+                <CCC/>
+                <CCC/>
+                <CCC/>
+            </BBB>
+        </AAA>
+        <BBB/>
+        <BBB>
+            Esta es <CCC/> una combinación <CCC/> de <CCC> elementos CCC</CCC> y texto <CCC/>
+        </BBB>
+        <BBB>
+            Sólo texto
+        </BBB>
+    </XXX>
+    
+    - La primera regla del DTD se respeta
+    - La segunda regla del DTD se respeta
+    - La tercera regla del DTD se respeta
+    - La cuarta regla del DTD se respeta
+    > CONCLUSIÓN: El documento es válido
+    ########################################################
+    
+    =================================================================
+    
+    PRACTICA 16: ¿Es válido el documento dado el siguiente DTD?
+    =================================================================
+    
+    DTD:
+    <!ELEMENT XXX (AAA+)>
+    <!ELEMENT AAA EMPTY>
+    
+    ########################################################
+    Documento 1:
+    <XXX>
+        <AAA/>
+        <AAA/>
+    </XXX>
+    
+    - La primera regla del DTD se respeta
+    - La segunda regla del DTD se respeta
+    > CONCLUSIÓN: El documento es válido
+    ########################################################
+     
+    =================================================================
+    
+    PRACTICA 17: Describe  con  tus  palabras  qué  elementos  se están  definiendo  y  qué  tipo  de  hijos  pueden  contener  en  las siguientes declaraciones de DTD
+    =================================================================
+    
+    1. <!ELEMENT LIBRO (Autor, Editorial)>
+        La etiqueta <LIBRO> contendrá las etiquetas <autor> y <editorial>
+        
+    2. <!ELEMENT Autor (#PCDATA)>
+        La etiqueta <autor> contendrá únicamente texto, ninguna etiqueta.
+        
+    3. <!ELEMENT PELICULA (Autor|Actriz|Director)+>
+        La etiqueta <PELICULA> contendrá al menos una de las tres etqiquetas.
+        
+    4. <!ELEMENT PELICULA ((Autor|Actriz)*, Director, Maquillaje?)>
+        La etiqueta <PELICULA> contendrá <direcotor> y puede contener las <autor>/<actriz> o ambas y además infinitas veces. Por último puede tener como máximo una etiqueta <maquillaje> pero también puede tener ninguna.
+        
+    5. <!ELEMENT PELICULA (#PCDATA | Actor)*>
+        La etiqueta <PELICULA> podrá tener la etiqueta <Actor> y/o podrá contener texto. Además pueden estar contenido infinitas veces.
+    
+    6. <!ELEMENT PELICULA (Titulo, Genero, (Actor | Actriz | Narrador)*)>
+        La etiqueta <PELICULA> contendrá la etiqueta <titulo> y <genero>. Además puede contener <actor> y/o <actriz> y/o <narrador> ninguna o infinitas veces.
+    
+    7. <!ELEMENT FICHA (Nombre+, Apellido+, Direccion*, foto?, (TelFijo*|TelMovil*))>
+        La etiqueta <FICHA> contendrá como mínimo una etiqueta <nombre>, <apellido> y <direccion>. Además puede tener como máximo una etiqueta <foto>.
+
+    =================================================================
+    
+    PRACTICA 18:  Realiza  una  DTD  apropiada  para  representar  el siguiente documento xml:
+    =================================================================
+    
+    DOCUMENTO XML:
+    <Agenda>
+        <Persona>
+            <Nombre> Eva </Nombre>
+            <Apellido> Lopez </Apellido>
+            <Email> evalopez@milink.org </Email>
+            <Oficina> 2.1 B18 </Oficina>
+            <Telefono> 5555555 </Telefono>
+            <Movil> 5557777 </Movil>
+        </Persona
+    </Agenda>
+    
+    MI DTD:
+    
+    <!ELEMENT Agenda (Persona)*>
+    <!ELEMENT Persona (Nombre, Apellido, Email, Oficina, Teléfono, Movil)>
+    <!ELEMENT Nombre (#PCDATA)>
+    <!ELEMENT Apellido (#PCDATA)>
+    <!ELEMENT Email (#PCDATA)>
+    <!ELEMENT Oficina (#PCDATA)>
+    <!ELEMENT Teléfono (#PCDATA)>
+    <!ELEMENT Movil (#PCDATA)>
+    
+    =================================================================
+    
+    PRACTICA 19:   Explica con tus propias palabras qué se define en el siguiente extracto de una DTD:
+    =================================================================
+    
+    <!ATTLIST curso
+        director CDATA #REQUIRED
+        horario (mañana|tarde|noche) #IMPLIED
+        matricula (ordinaria|extraordinaria) "Ordinaria"
+        tasas CDATA #FIXED "53€">
+        
+    Este extracto define los atributos que puede o tiene que tomar la etiqueta <curso>.
+    Primero tenemos el atributo "director" que es requerido (#REQUIRED) y contendrá una cadena de text (CDATA).
+    En segundo lugar tenemos "horario" que podrá tomar los tres valores indicados. Es un atributo no obligatorio si no opcional (#IMPLIED)
+    En tercer lugar tenemos "matricula" que podrá tomar los dos valores indicados aunque por defecto (si no se introduce nada) será "Ordinaria".
+    Por último tenemos "tasas" que contendrá siempre el mismo valor "53€" ya que es eso lo que indica #FIXED.
+    
+    =================================================================
+    
+    PRACTICA 20:   Explica con tus propias palabras qué se define en el siguiente extracto de una DTD:
+    =================================================================
+    
+    <!ELEMENT pelicula (titulo, writer+, productor+, actor*, comentarios?)>
+    <!ATTLIST pelicula
+        tipo (drama|comedy|adventure|sci-fi|mistery|horror|romance|documentary) "drama"
+        clasificacion(G|PG|PG-13|R|X) "PG"
+        review (1|2|3|4|5) "3"
+        año CDATA #IMPLIED>
+        
+    En primer lugar tenemos la definición de la etiqueta "pelicula" y lo que esta puede o tiene que contener. Debe contener un título, debe contener como mínimo (o más) una etiqueta <writer>, <productor>. Además de esto, puede tener 0 o infinitas etiquetas <actor>. Puede contener 0 o una etiqueta <comentarios>.
+    
+    En segundo lugar tenemos la definición de los atributos que la etiqueta <pelicula> puede tomar.
+        - El primer atributo "tipo" podrá únicamente tomar los valores indicados y que por defecto (si no se introduce nada) será "drama"
+        - El segundo atributo "clasificacion" podrá únicamente tomar los valores indicados y que por defecto (si no se introduce nada) será "PG"
+        - El tercer atributo "review" tomará los valores 1-5 y que por defecto (si no se introduce nada) será "3".
+        - El último atributo "año" contendrá una cadena de texto y es opcional rellenarlo (#IMPLIED).
+    
+    =================================================================
+    
+    PRACTICA 21:   Observando la siguiente DTD indica si es válido el código xml posterior
+    =================================================================
+    DTD:
+    <!ELEMENT mietiqueta (#PCDATA)>
+    <!ATTLIST mietiqueta 
+        AtribA CDATA #IMPLIED
+        AtribB NMTOKEN #REQUIRED
+        AtribC NMTOKENS #REQUIERED>
+        
+    ########################################################
+    Documento 1:
+    <mietiqueta AtriB="12.5">Text</mietiqueta>
+    
+    NO VÁLIDO. El atributo C es #REQUIRED y no está.
+    ########################################################
+    
+    ########################################################
+    Documento 2:
+    <mietiqueta AtriB="12.5" AtribC="3:16">Text</mietiqueta>
+    
+    VÁLIDO. Contiene las dos etiquetas requeridas.
+    ########################################################
+    
+    ########################################################
+    Documento 3:
+    <mietiqueta AtribA="hola" AtriB="12.5">Text</mietiqueta>
+    
+    VÁLIDO. Contiene las dos etiquetas requeridas y la opcional.
+    ########################################################
+    
+    ########################################################
+    Documento 4:
+    <mietiqueta AtribA="17:5" AtriB="12,5" AtribC="2 3">Text</mietiqueta>
+    
+    NO VÁLIDO. Aunque contenga los dos atributos requeridos y el opcional, el AtribB debe ser "NMTOKEN" lo cual prohibe el uso de ",". AtribC es NMTOKENS por lo que su espacio es correcto y no contribuye a que este documento no sea válido.
+    ########################################################
+    
+    ########################################################
+    Documento 5:
+    <mietiqueta AtribA="aa" AtribB="17 5" AtribC="hola">Text</mietiqueta>
+    
+    NO VÁLIDO. Aunque contenga los dos atributos requeridos y el opcional, el AtribB es "NMTOLEN" por lo que no está permitido el uso de espacios.
+    ########################################################

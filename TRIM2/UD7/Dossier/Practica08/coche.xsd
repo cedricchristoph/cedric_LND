@@ -20,7 +20,6 @@
                     </xs:simpleType>
                 </xs:element>
             </xs:sequence>    
-        
     </xs:complexType>
     
 </xs:schema>

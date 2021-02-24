@@ -1,0 +1,1 @@
+Al poner en estado civil un valor que no está en la lista, el XML no es válido y se muestra un error.

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<coche
+xmlns="http://www.misitio.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="coche.xsd">
+        
+        <marca>Nissan</marca>
+        <modelo>Qashqai</modelo>
+        <puertas>5</puertas>
+        <color>gris</color>
+    
+</coche>

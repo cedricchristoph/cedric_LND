@@ -1,0 +1,1 @@
+Al cambiar en edad el valor "default" a "fixed" hacemos que cuando se introduzca un valor diferente a 18, no sea válido el XML.

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<persona
+xmlns="http://www.misitio.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="persona.xsd">
+        
+        <dni>12345678V</dni>
+        <nombre>Cedric</nombre>
+        <apellido>Christoph</apellido>
+        <edad>18</edad>
+        <fechanacimiento>2002-11-12</fechanacimiento>
+        <estadocivil>casado</estadocivil>
+</persona>

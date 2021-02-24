@@ -2,8 +2,8 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.misitio.com" xmlns="http://www.misitio.com" elementFormDefault="qualified">
     
     
-    <xs:element name="coche">
-        <xs:complexType>
+    <xs:element name="coche" type="datoscoche"/>
+    <xs:complexType name="datoscoche">
             <xs:sequence>
                 <xs:element name="marca" type="xs:string"/>
                 <xs:element name="modelo" type="xs:string"/>
@@ -19,8 +19,7 @@
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:element>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
+            </xs:sequence>    
+    </xs:complexType>
     
 </xs:schema>

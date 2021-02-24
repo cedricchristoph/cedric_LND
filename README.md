@@ -1,3 +1,3 @@
-# cedric_LND
+# DESCRIPTION
 
 This repository is for educational purposes only.

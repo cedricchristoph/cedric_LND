@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<rss version="2.0">
+    <channel>
+        <title>Desarrollo de aplicaciones multiplataforma</title>
+        <description>Aquí se informa sobre cada asignatura que cursan los alumnos del ciclo superior DAM</description> 
+        <link>https://blog.iespuertodelacruz.es/</link>
+        
+        <item>
+            <title>LND - Lenguajes de marcas</title>
+            <description>Esta asignatura enseña el uso de lenguajes de marcas</description>
+            <link>https://blog.iespuertodelacruz.es/</link>
+        </item>
+        <item>
+            <title>PRO - Programacion</title>
+            <description>En esta asignatura los alumnos aprenden a crear propios programas y a solucionar problemas mediante códigos</description>
+            <link>https://blog.iespuertodelacruz.es/</link>
+        </item>
+        <item>
+            <title>LNT - Inglés</title>
+            <description>Enseñanza importante y obligatoria del idioma inglés</description>
+            <link>https://blog.iespuertodelacruz.es/</link>
+        </item>
+        <item>
+            <title>SSF - Sistemas Informátios</title>
+            <description>Se aprende a crear redes, utilizar terminales, mantener servidores, etc</description>
+            <link>https://blog.iespuertodelacruz.es/</link>
+        </item>
+        <item>
+            <title>FOL - Formación y Orienteación Laboral</title>
+            <description>Pretende explicar el mundo laboral al que se enfrentarán los alumnos tras finalizar su enseñanza</description>
+            <link>https://blog.iespuertodelacruz.es/</link>
+        </item>
+        <item>
+            <title>ETS - Entornos de Desarrollo</title>
+            <description>Enseña a utilizar adecuadamente las herramientas de los entornos de desarrollo más comunes</description>
+            <link>https://blog.iespuertodelacruz.es/</link>
+        </item>
+        <item>
+            <title>BAE - Bases de Datos</title>
+            <description>Aprender a crear estructuras de bases de datos para almacenar información de forma adecuada</description>
+            <link>https://blog.iespuertodelacruz.es/</link>
+        </item>
+    </channel>
+</rss>

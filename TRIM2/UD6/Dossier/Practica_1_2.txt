@@ -1,0 +1,22 @@
+Dossier | UD6
+
+1)
+    a) ¿Qué versión RSS está utilizando esta página?
+            Cómo podemos ver en la etiqueta <rss>, la versión utilizada por esta página es RSS 2.0.
+    
+    b) ¿Qué etiquetas forman la estructura del documento?
+        - Primero tenemos la etiqueta <rss>
+        - En segunda posición se abre la etiqueta <channel> en la cual estarán contenidas todas las próximas:
+        - <title>
+        - <link>
+        - <decription>
+        - <language>
+        - En el documento podemos encontrar etiquetas de tipo <atom>
+        - Podemos ver etiquetas <item> en las cuales están contenidas las etiquetas <title>, <link>, <description>, <comments>, <pubDate>, ...
+
+2)
+    a) ¿Qúe versión RSS se está utilizando?
+        Se es´ta empleando la misma versión RSS que en el ejercicio anterios. RSS 2.0.
+        
+    b) ¿Hay  alguna  diferencia  con  el fichero  de  la práctica 01?
+        Sí. En comparación con el anterior, este se ve bastante mal. No es posible 		presionar los títulos para ser redirigido.

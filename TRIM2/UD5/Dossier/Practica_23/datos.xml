@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE libros SYSTEM "datos.dtd" >
+
+<datos>
+    <centro>
+        <denominacion>IES Mencey Bencomo</denominacion>
+        <direccion>C/Adelantado 1, 38410 Realejos (Los) (Tenerife)</direccion>
+        <telefono>922353096</telefono>
+    </centro>
+    <alumno>
+        <nombre>Cedric</nombre>
+        <direccion>C/Teide 7</direccion>
+        <telefono>674341091</telefono>
+    </alumno>
+    <alumno>
+        <nombre>Alfredo</nombre>
+        <direccion>C/Gonzalez 3</direccion>
+        <telefono>123123123</telefono>
+    </alumno>
+</datos>

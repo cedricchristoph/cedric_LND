@@ -265,3 +265,23 @@ PRACTICAS 14-21 DOSSIER | CEDRIC CHRISTOPH
     
     NO VÁLIDO. Aunque contenga los dos atributos requeridos y el opcional, el AtribB es "NMTOLEN" por lo que no está permitido el uso de espacios.
     ########################################################
+    
+    =================================================================
+    
+    PRACTICA 23:   Sea el siguiente DTD
+    =================================================================
+    
+    DTD:
+    <!ENTITY % contacto "direccion, telefono">
+    <!ELEMENT alumno (nombre, %contacto;)>
+    <!ELEMENT centro (denominacion, %contacto;)>
+    
+    1. Termina de definir la DTD
+        <!ENTITY % contacto "direccion, telefono">
+        <!ELEMENT alumno (nombre, %contacto;)>
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT centro (denominacion, %contacto;)>
+        <!ELEMENT denominacion (#PCDATA)>
+    
+    2. Crea un documento XML con dos alumnos y un centro.
+        DOCUMENTO ESTÁ EN LA CARPETA CORRESPONDIENTE

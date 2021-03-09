@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persona xsi:noNamespaceSchemaLocation="C:\Users\Inf2\Documents\Practica13\persona.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<apellido>Christoph</apellido>
+	<nombre>Cedric</nombre>
+</persona>

@@ -1,0 +1,11 @@
+<!ELEMENT  olimpiadas(año,sede,deporte+)>
+<!ELEMENT año (#PCDATA)>
+<!ELEMENT sede(#PCDATA)>
+<!ELEMENT deporte (ganador+)>
+<!ATTLIST deporte nombre CDATA>
+<!ATTLIST deporte modalidad ("Masculino"|"Femenino")>
+<!ELEMENT ganador (nombre,pais,medalla)>
+<!ATTLIST ganador discapacidad CDATA>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT medalla (#PCDATA)>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<olimpiadas xmlns="http://www.misitio.com" xmlns:xsi="http://www.w3.org/TR/xmlschema-1/" xsi:schemaLocation="olimpiadas.xsd">
+	<año>2012</año>
+	<sede>Londres</sede>
+	<deporte nombre="Tiro con arco" modalidad="Masculino">
+		<ganador>
+			<nombre>Furukawa</nombre>
+			<pais>Japón</pais>
+			<medalla>oro</medalla>
+		</ganador>
+		<ganador discapacidad="true">
+			<nombre>Delgado</nombre>
+			<pais>Colombia</pais>
+			<medalla>plata</medalla>
+		</ganador>
+		<ganador discapacidad="true">
+			<nombre>Smith</nombre>
+			<pais>Inglaterra</pais>
+			<medalla>bronce</medalla>
+		</ganador>
+	</deporte>
+	<deporte nombre="Natación" modalidad="Femenino">
+		<ganador>
+			<nombre>Paulova</nombre>
+			<pais>Polonia</pais>
+			<medalla>oro</medalla>
+		</ganador>
+		<ganador>
+			<nombre>Fiorella</nombre>
+			<pais>Italia</pais>
+			<medalla>plata</medalla>
+		</ganador>
+		<ganador>
+			<nombre>Valázquez</nombre>
+			<pais>Chile</pais>
+			<medalla>bronce</medalla>
+		</ganador>
+	</deporte>
+</olimpiadas>

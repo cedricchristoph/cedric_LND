@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.misitio.com" elementFromDefault="qualified" xmlns="http://www.misitio.com">
+	<xs:element name="olimpiadas" type="tipoolimpiadas"/>
+	<xs:complexType name="tipoolimpiadas">
+		<xs:sequence>
+			<xs:element name="año" type="xs:integer"/>
+			<xs:element name="sede" type="xs:string"/>
+			<xs:element name="deporte" type="tipodeporte" minOccurs="2" maxOcurrs="10"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tipodeporte">
+		<xs:sequence>
+			<xs:element name="ganador" type="tipoganador" minOcurrs="1" maxOcurres="3"/>
+			<xs:attribute name="nombre" type="xs:string"/>
+			<xs:attribute name="modalidad">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Masculino"/>
+						<xs:enumeration value="Femenino"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tipoganador">
+		<xs:attribute name="discapacidad" type="xs:boolean" default="false"/>
+		<xs:element name="nombre" type="xs:string"/>
+		<xs:element name="pais" type="xs:string"/>
+		<xs:element name="medalla">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="oro"/>
+					<xs:enumeration value="plata"/>
+					<xs:enumeration value="bronce"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:element>
+	</xs:complexType>
+</xs:schema>

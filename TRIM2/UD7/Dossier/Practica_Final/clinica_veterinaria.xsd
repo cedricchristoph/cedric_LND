@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="clinicaveterinaria">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="codigo" type="xs:string"/>
+				<xs:element name="cliente" maxOccurs="unbounded" type="cliente"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:complexType name="cliente">
+		<xs:sequence>
+			<xs:element name="nombre" type="xs:string"/>
+			<xs:element name="apellidos" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="animal" type="animal" minOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="animal">
+		<xs:attribute  name="especie">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="perro"></xs:enumeration>
+					<xs:enumeration value="gato"></xs:enumeration>
+					<xs:enumeration value="reptil"></xs:enumeration>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="nombre" type="xs:string"/>
+		<xs:attribute name="edad">
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="0"/>
+					<xs:maxInclusive value="15"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="raza" type="xs:string"></xs:attribute>
+		<xs:attribute name="sexo">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="H"/>
+					<xs:enumeration value="M"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+</xs:schema>

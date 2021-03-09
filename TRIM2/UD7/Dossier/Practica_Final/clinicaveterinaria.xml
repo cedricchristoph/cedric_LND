@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<clinicaveterinaria xsi:noNamespaceSchemaLocation="C:\Users\Inf2\Documents\Practica_Final\clinica_veterinaria.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<codigo>H567Y</codigo>
+	<cliente>
+		<nombre>Elena</nombre>
+		<apellidos>Vázquez</apellidos>
+		<animal especie="perro" nombre="Lili" edad="12" raza="algo" sexo="H"/>
+	</cliente>
+
+	<cliente>
+		<nombre>Cedric</nombre>
+		<apellidos>Christoph</apellidos>
+		<animal especie="perro" nombre="Wauf" edad="12" raza="Husky" sexo="M"/>
+	</cliente>
+	
+	<cliente>
+		<nombre>Kairon</nombre>
+		<animal especie="gato" nombre="Sisi" edad="4" raza="algo" sexo="H"/>
+	</cliente>
+
+</clinicaveterinaria>
+
+

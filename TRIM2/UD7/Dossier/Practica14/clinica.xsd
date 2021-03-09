@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="clinica">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="paciente" type="persona" maxOccurs="500"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="persona">
+		<xs:sequence>
+			<xs:element name="nombre" type="xs:string"/>
+			<xs:element name="apellidos" type="xs:string" />
+			<xs:element name="visitante" type="persona" minOccurs="0" maxOccurs="2"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<clinica xsi:noNamespaceSchemaLocation="C:\Users\Inf2\Documents\Practica14\clinica.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<paciente>
+		<nombre>Pedro</nombre>
+		<apellidos>Hernández</apellidos>
+		<visitante>
+			<nombre>Alejandro</nombre>
+			<apellidos>Hernández</apellidos>
+		</visitante>
+		<visitante>
+			<nombre>Tom</nombre>
+			<apellidos>Tester</apellidos>
+		</visitante>
+	</paciente>
+	
+	<paciente>
+		<nombre>Alberto</nombre>
+		<apellidos>Gil</apellidos>
+		<visitante>
+			<nombre>Alejandro</nombre>
+			<apellidos>Hernández</apellidos>
+		</visitante>
+		<visitante>
+			<nombre>Tom</nombre>
+			<apellidos>Tester</apellidos>
+		</visitante>
+	</paciente>
+	
+	<paciente>
+		<nombre>Alejandra</nombre>
+		<apellidos>Pérez</apellidos>
+		<visitante>
+			<nombre>Alejandro</nombre>
+			<apellidos>Hernández</apellidos>
+		</visitante>
+		<visitante>
+			<nombre>Tom</nombre>
+			<apellidos>Tester</apellidos>
+		</visitante>
+	</paciente>
+</clinica>
+
+

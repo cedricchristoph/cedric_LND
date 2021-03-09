@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<boletines xsi:noNamespaceSchemaLocation="C:\Users\Inf2\Documents\Practica12\boletines.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<boletin>
+		<nombre>Juan</nombre>
+		<apellidos>Gonzalez Delgado</apellidos>
+		<nota>8</nota>
+		<materia>Lenguaje de marcas - LND</materia>
+	</boletin>
+</boletines>
+
+

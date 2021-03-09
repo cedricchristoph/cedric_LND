@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.misitio.com" xmlns="http://www.misitio.com" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.misitio.com" elementFormDefault="qualified">
     
     <xs:element name="pasajes">
         <xs:complexType>
@@ -7,10 +7,10 @@
                 
                 <xs:element name="pasaje">
                     <xs:complexType>
-                        <attribute name="asiento" type="xs:string" use="requiered"/>
-                        <attribute name="ventanilla" type="xs:boolean" default="true"/>
-                        <attribute name="precio" type="xs:integer" use="optional"/>
-                        <attribute name="moneda" type="xs:string" default="euros"/>
+                        <xs:attribute name="asiento" type="xs:string" use="required"/>
+                        <xs:attribute name="ventanilla" type="xs:boolean" default="true"/>
+                        <xs:attribute name="precio" tyoe="xs:double" use="optional"/>
+                        <xs:attribute name="moneda" type="xs:string" default="euros"/>
                     </xs:complexType>
                 </xs:element>
                 

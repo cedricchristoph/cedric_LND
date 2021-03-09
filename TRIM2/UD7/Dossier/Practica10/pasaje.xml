@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<pasajes
+xmlns="http://www.misitio.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="coche.xsd">
+    
+    <pasaje asiento="18D" ventanilla="false" precio="98,16" moneda="dollar"/>
+    
+</pasajes>
+
+<!--
+
+Únicamente da error al no decir el asiento ya que este
+atributo está definido como "requiered" (obligaroio)
+
+-->

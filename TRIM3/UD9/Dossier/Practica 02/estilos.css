@@ -1,0 +1,21 @@
+
+/* Hoja de estilos para alumnos.xml */
+
+nombre {
+	font-size: 20px;
+	color: red;
+	background-color: #FFC0CB;
+}
+
+apellidos {
+	font-size: 16px;
+	color: green;
+}
+
+repetidor {
+	display: none;
+}
+
+notas {
+	display: none;
+}

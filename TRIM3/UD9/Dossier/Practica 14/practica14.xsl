@@ -18,10 +18,10 @@
 		</reporteros>
 	</xsl:template>
 	<xsl:template match="item">
-		<xsl:element name="reportero">
-			<xsl:element name="nombre"><xsl:value-of select="author"></xsl:value-of></xsl:element>
-			<xsl:element name="noticia"><xsl:value-of select="title"></xsl:value-of></xsl:element>
-			<xsl:element name="fecha"><xsl:value-of select="pubDate"></xsl:value-of></xsl:element>
+		<xsl:element name="noticia">
+			<xsl:attribute name="autor"><xsl:value-of select="./author"/></xsl:attribute>
+			<xsl:attribute name="fecha"><xsl:value-of select="./pubDate"/></xsl:attribute>
+			<xsl:value-of select="title"/>
 		</xsl:element>
 	</xsl:template>
 

@@ -21,22 +21,23 @@
 					<th bgcolor="blue" style="color: white; text-align: left;">Total de puntos</th>
 					<th bgcolor="blue" style="color: white; text-align: left;">Nota media</th>
 				</tr>
-				<tr>
-					<td bgcolor="blue" style="color: white; text-align: left;"><xsl:number format="1"/></td>
-					<xsl:apply-templates select="/instituto/curso/alumno"/>
-				</tr>
+				<xsl:for-each select="/instituto/curso/alumno">
+					<xsl:sort select="." order="ascending"/>
+					<tr>
+						<th bgcolor="blue" style="color: white; text-align: left;"><xsl:number format="1"/></th>
+						<th style="text-align: left;"><xsl:value-of select="../@nombre"/></th>
+						<th style="text-align: left;"><xsl:value-of select="@cial"/></th>
+						<th style="text-align: left;"><xsl:value-of select="nombre"/></th>
+						<th style="text-align: left;"><xsl:value-of select="apellidos"/></th>
+						<th style="text-align: left;"><xsl:value-of select="repetidor"/></th>
+						<th style="text-align: left;"><xsl:value-of select="sum(notas/nota)"/></th>
+						<th style="text-align: left;"><xsl:value-of select="sum(notas/nota) div count(notas/nota)"/></th>
+					</tr>
+					
+				</xsl:for-each>
 			</table>
 		</body>
 	</html>
-	</xsl:template>
-	<xsl:template match="alumno">
-		<td style="text-align: left;"><xsl:value-of select="../@nombre"/></td>
-		<td style="text-align: left;"><xsl:value-of select="@cial"/></td>
-		<td style="text-align: left;"><xsl:value-of select="nombre"/></td>
-		<td style="text-align: left;"><xsl:value-of select="apellidos"/></td>
-		<td style="text-align: left;"><xsl:value-of select="repetidor"/></td>
-		<td style="text-align: left;"><xsl:value-of select="sum(notas/nota)"/></td>
-		<td style="text-align: left;"><xsl:value-of select="sum(notas/nota) div count(notas/nota)"/></td>
 	</xsl:template>
 </xsl:stylesheet>
 

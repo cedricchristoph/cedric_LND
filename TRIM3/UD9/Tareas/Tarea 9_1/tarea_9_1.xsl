@@ -17,7 +17,7 @@
 					<td bgcolor="green">CIAL</td>
 					<td bgcolor="green">Total de faltas justificadas</td>
 				</tr>
-				<xsl:apply-templates select="/faltas/alumno"></xsl:apply-templates>
+				<xsl:apply-templates select="/faltas/alumno" mode="justificado"></xsl:apply-templates>
 			</table>
 			<br/>
 			<h2 style="color: red;" >Faltas injustificadas</h2>
@@ -27,19 +27,13 @@
 					<td bgcolor="red">CIAL</td>
 					<td bgcolor="red">Total de faltas injustificadas</td>
 				</tr>
-				<xsl:apply-templates select="/faltas/alumno"></xsl:apply-templates>
+				<xsl:apply-templates select="/faltas/alumno" mode="injustificado"></xsl:apply-templates>
 			</table>
 		</body>
 	</html>
 	</xsl:template>
 
-	
-
-	<xsl:template match="alumno">
-
-		<xsl:choose>
-
-			<xsl:when test="$firstTable = 'true'">
+	<xsl:template match="alumno" mode="justificado">
 
 				<tr>
 
@@ -51,10 +45,8 @@
 
 				</tr>
 
-			</xsl:when>
-
-			<xsl:otherwise>
-
+	</xsl:template>
+	<xsl:template match="alumno" mode="injustificado">
 				<tr>
 
 					<td bgcolor="red" style="text-align: center;" ><xsl:number format="a"/>)</td>
@@ -64,11 +56,6 @@
 					<td><xsl:value-of select="count(falta[@tipo='I'])"/></td>
 
 				</tr>
-
-			</xsl:otherwise>
-
-		</xsl:choose>
-
 	</xsl:template>
 </xsl:stylesheet>
 

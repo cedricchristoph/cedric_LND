@@ -9,7 +9,7 @@
 	<xsl:template match="/">
 	<html>
 		<body>
-		<xsl:apply-templates select="/instituto/curso"/>
+			<xsl:apply-templates select="/instituto/curso"/>
 		</body>
 	</html>
 	</xsl:template>

@@ -16,41 +16,29 @@
 			<h2>Noticias con la palabra "abril" en el área de contenido:</h2>
 			<table width="1000px;" style="border-style: solid; border-color: #eda4a4;">
 				<tr>
-
-					<td bgcolor="#eda4a4" style="text-align: left; border-style: solid; border-color: #eda4a4">TITULO</td>
-
-					<td bgcolor="#eda4a4" style="text-align: left; border-style: solid; border-color: #eda4a4">CONTENIDO</td>
-
+					<td bgcolor="#eda4a4" style="width: 25%; text-align: left; border-style: solid; border-color: #eda4a4">TITULO</td>
+					<td bgcolor="#eda4a4" style="width: 75%; text-align: left; border-style: solid; border-color: #eda4a4">CONTENIDO</td>
 				</tr>
-				<xsl:apply-templates select="/rss/channel/item[contains(pubDate, 'Apr')]" mode="abril"/>
+				<xsl:apply-templates select="/rss/channel/item[contains(description, 'abril')]" mode="abril"/>
 			</table>
 			<br/>
 			<table width="1000px;" style="border-style: solid; border-color: #eda4a4;">
 				<tr>
-					<td bgcolor="#eda4a4" style="text-align: left; border-style: solid; border-color: #eda4a4">FECHA</td>
-
-					<td bgcolor="#eda4a4" style="text-align: left; border-style: solid; border-color: #eda4a4">TITULO</td>
-
-					<td bgcolor="#eda4a4" style="text-align: left; border-style: solid; border-color: #eda4a4">CONTENIDO</td>
-
+					<td bgcolor="#eda4a4" style="width: 25%; text-align: left; border-style: solid; border-color: #eda4a4">FECHA</td>
+					<td bgcolor="#eda4a4" style="width: 25%; text-align: left; border-style: solid; border-color: #eda4a4">TITULO</td>
+					<td bgcolor="#eda4a4" style="width: 50%; text-align: left; border-style: solid; border-color: #eda4a4">CONTENIDO</td>
 				</tr>
 				<xsl:apply-templates select="/rss/channel/item" mode="sc"/>
 			</table>
 		</body>
 	</html>
 	</xsl:template>
-
-
+	
 	<xsl:template match="item" mode="abril">
-
 		<tr>
-
 			<td bgcolor="#eda4a4" style="text-align: left; border-style: solid; border-color: #eda4a4"><xsl:value-of select="title"/></td>
-
 			<td style="$left"><xsl:value-of select="description"/></td>
-
 		</tr>
-
 	</xsl:template>
 	
 	<xsl:template match="item" mode="sc">

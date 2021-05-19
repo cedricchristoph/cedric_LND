@@ -10,8 +10,8 @@
 	<xsl:template match="/">
 	<html>
 		<body>
-			<h2 style="color: green;" >Faltas justificadas</h2>
-			<table>
+			<h3 style="color: green;" >Faltas justificadas</h3>
+			<table style="border: 1px solid green; width: 30%;" >
 				<tr>
 					<td bgcolor="green">Nº</td>
 					<td bgcolor="green">CIAL</td>
@@ -20,8 +20,8 @@
 				<xsl:apply-templates select="/faltas/alumno" mode="justificado"></xsl:apply-templates>
 			</table>
 			<br/>
-			<h2 style="color: red;" >Faltas injustificadas</h2>
-			<table>
+			<h3 style="color: red;" >Faltas injustificadas</h3>
+			<table style="border: 1px solid red; width: 30%;" >
 				<tr>
 					<td bgcolor="red">Nº</td>
 					<td bgcolor="red">CIAL</td>
@@ -53,7 +53,12 @@
 
 					<td><xsl:value-of select="@cial"/></td>
 
-					<td><xsl:value-of select="count(falta[@tipo='I'])"/></td>
+					<td>
+						<xsl:value-of select="count(falta[@tipo='I'])"/>
+						<xsl:if test="count(falta[@tipo='I']) &gt; 5">
+							<b style="color: red;" > Pérdida de eval. contínua</b>
+						</xsl:if>
+					</td>
 
 				</tr>
 	</xsl:template>

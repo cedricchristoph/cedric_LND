@@ -7,7 +7,7 @@
 	<xsl:template match="/">
 		<html>
 			<body>
-				<xsl:apply-templates select="//item[]//text()"/>
+				<xsl:apply-templates select="//item[author='DUNALUNA'][(position()=1)]//text()"/>
 			</body>
 		</html>
 	</xsl:template>

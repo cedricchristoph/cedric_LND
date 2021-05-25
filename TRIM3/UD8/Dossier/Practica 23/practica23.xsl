@@ -3,17 +3,12 @@
 <!-- New document created with EditiX at Mon May 24 11:21:50 BST 2021 -->
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-
 	<xsl:output method="html"/>
-	
 	<xsl:template match="/">
-	<html>
-		<body>
-			<xsl:apply-templates  select="//alumno[@cial='A90R112']/ancestor::curso/@nombre"/>
-		</body>
-	</html>
+		<html>
+			<body>
+				<xsl:apply-templates select="//alumno[(starts-with(nombre, 'M')) and (repetidor='False')]//text()"/>
+			</body>
+		</html>
 	</xsl:template>
-
 </xsl:stylesheet>
-
-

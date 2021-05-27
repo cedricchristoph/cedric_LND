@@ -24,7 +24,6 @@ declare copy-namespaces no-preserve, no-inherit ;
 					declare $contador = 0
 					for $comentario in $alumno/comentario
 					return
-						
 						<tr>
 							<td>{string($alumno/@cial)}</td>
 							<td>

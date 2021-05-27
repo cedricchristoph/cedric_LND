@@ -21,19 +21,11 @@ declare copy-namespaces no-preserve, no-inherit ;
 			{
 				for $alumno in //alumno
 				return
-					declare $contador = 0
-					for $comentario in $alumno/comentario
-					return
 						<tr>
 							<td>{string($alumno/@cial)}</td>
-							<td>
-								{
-								
-								}
-							</td>
+							<td>{string(count(distinct-values($alumno/comentario/@fecha)))}</td>
 							<td>{string(count($alumno/comentario))}</td>
 						</tr>
-				
 			}		
 		</table>
 	</body>
